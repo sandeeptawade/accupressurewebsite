@@ -3,234 +3,1104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandeep Tawade | Acupuncture Healing</title>
+<title>Sandeep Tawade | Natural Relief for Neck, Shoulder & Lower Back Pain — Home Visits, Mumbai</title>
+<meta name="description" content="Acupressure & neurotherapy home visits across Mumbai. 30+ years experience, 10,000+ patients treated. Relief for neck pain, frozen shoulder, sciatica, slip disc & lower back pain — at your home.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- ============================================================
+     QUICK CONFIG — edit these two lines to change your WhatsApp
+     number or the pre-filled message used on EVERY button/link
+     on this page. Find & replace is enough:
+       PHONE NUMBER : 919322279092
+       MESSAGE TEXT : "Hi, I want to book an appointment"
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f6f9f7;
-    color: #333;
-}
+  :root{
+    --green-900:#1B4D2E;
+    --green-700:#2E7D32;
+    --green-500:#6FAE7B;
+    --mint-50:#F5FAF3;
+    --mint-100:#E7F4E3;
+    --mint-200:#D9EDD4;
+    --gold-500:#D9A94D;
+    --ink:#20301F;
+    --ink-soft:#526056;
+    --white:#FFFFFF;
+    --wa:#25D366;
+    --line:rgba(27,77,46,0.14);
+    --shadow: 0 20px 50px rgba(27,77,46,0.08);
+  }
 
-/* HERO */
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('sandeep tawade banner image .png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--mint-50);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
 
-.hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    margin:0;
+    color:var(--green-900);
+    letter-spacing:-0.01em;
+  }
 
-.hero-content p {
-    font-size: 18px;
-}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--green-700);
+    font-weight:500;
+  }
 
-.cta-btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 14px 28px;
-    background: #2e7d32;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: 0.3s;
-}
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 24px;
+  }
 
-.cta-btn:hover {
-    background: #1b5e20;
-}
+  section{padding:88px 0;}
 
-/* STATS */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    background: white;
-    padding: 40px 20px;
-    margin-top: -60px;
-    border-radius: 15px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:16px 30px;
+    border-radius:8px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:15.5px;
+    text-decoration:none;
+    border:1px solid transparent;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:transform .15s ease, background .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{
+    background:var(--green-900);
+    color:var(--white);
+    box-shadow:0 8px 20px rgba(27,77,46,0.18);
+  }
+  .btn-primary:hover{background:#123A22;}
+  .btn-wa{
+    background:var(--wa);
+    color:var(--white);
+    box-shadow:0 8px 20px rgba(37,211,102,0.3);
+  }
+  .btn-wa:hover{background:#1EBE59;}
+  .btn-outline-dark{
+    background:transparent;
+    border:1.5px solid var(--green-900);
+    color:var(--green-900);
+  }
+  .btn-outline-dark:hover{background:var(--green-900);color:var(--white);}
+  .btn-outline-light{
+    background:rgba(255,255,255,0.12);
+    border:1.5px solid rgba(255,255,255,0.6);
+    color:var(--white);
+  }
+  .btn-outline-light:hover{background:rgba(255,255,255,0.22);}
+  .btn svg{width:18px;height:18px;flex-shrink:0;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
 
-.stat h2 {
-    color: #2e7d32;
-}
+  /* ---------- NAV ---------- */
+  .nav{
+    position:sticky;
+    top:0;
+    z-index:80;
+    background:rgba(245,250,243,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1120px;
+    margin:0 auto;
+    padding:12px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .nav-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+  }
+  .nav-brand img{
+    height:42px;
+    width:42px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  .nav-brand span{
+    font-family:'Fraunces',serif;
+    color:var(--green-900);
+    font-size:18px;
+    font-weight:500;
+    line-height:1.2;
+  }
+  .nav-brand small{
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--green-700);
+    font-weight:500;
+  }
+  .nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .nav-links a{
+    text-decoration:none;
+    font-size:14.5px;
+    font-weight:500;
+    color:var(--ink);
+    padding:6px 2px;
+    border-bottom:2px solid transparent;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .nav-links a:hover, .nav-links a.active{
+    color:var(--green-900);
+    border-bottom-color:var(--gold-500);
+  }
+  .nav-cta{display:flex;gap:10px;align-items:center;flex-shrink:0;}
+  .nav .btn{padding:10px 18px;font-size:14px;}
+  .nav-toggle-checkbox{display:none;}
+  .nav-toggle-btn{
+    display:none;
+    width:40px;height:40px;
+    border-radius:8px;
+    border:1px solid var(--line);
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    background:var(--white);
+    flex-shrink:0;
+  }
+  .nav-toggle-btn svg{width:20px;height:20px;color:var(--green-900);}
 
-/* SECTION */
-.section {
-    padding: 70px 20px;
-    text-align: center;
-}
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(ellipse 900px 500px at 82% -10%, var(--mint-200) 0%, transparent 60%),
+      var(--mint-50);
+    overflow:hidden;
+    padding:56px 0 0 0;
+  }
+  .hero-mark{
+    position:absolute;
+    top:-40px; right:-80px;
+    width:520px;
+    max-width:60%;
+    opacity:0.14;
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    max-width:660px;
+  }
+  .badge-live{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:7px 13px;
+    border-radius:100px;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--green-900);
+    margin-bottom:18px;
+    box-shadow:0 4px 14px rgba(27,77,46,0.06);
+  }
+  .badge-live .dot{
+    width:8px;height:8px;border-radius:50%;background:var(--wa);
+    animation:dot-pulse 1.8s ease-in-out infinite;
+  }
+  .hero h1{
+    font-size:clamp(34px,5vw,54px);
+    line-height:1.08;
+    font-weight:500;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--green-700);
+  }
+  .hero-sub{
+    margin-top:22px;
+    font-size:17px;
+    line-height:1.6;
+    color:var(--ink-soft);
+    max-width:520px;
+  }
+  .stat-chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:28px 0 32px 0;
+  }
+  .stat-chip{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 14px;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:100px;
+    font-size:13.5px;
+    font-weight:500;
+    color:var(--green-900);
+    box-shadow:0 4px 14px rgba(27,77,46,0.06);
+  }
+  .stat-chip svg{width:15px;height:15px;color:var(--gold-500);flex-shrink:0;}
 
-.section h2 {
-    font-size: 32px;
-    color: #2e7d32;
-    margin-bottom: 20px;
-}
+  /* banner / portrait slot */
+  .hero-banner{
+    margin-top:48px;
+    position:relative;
+    z-index:1;
+    height:360px;
+    border-radius:16px 16px 0 0;
+    border:1px solid var(--line);
+    border-bottom:none;
+    overflow:hidden;
+    background:var(--mint-100);
+  }
+  .hero-banner img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top center;
+  }
+  .hero-banner::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(27,77,46,0) 45%, rgba(15,40,25,0.55) 100%);
+  }
+  .hero-banner-caption{
+    position:absolute;
+    left:24px; bottom:20px;
+    z-index:2;
+    color:var(--white);
+    font-family:'Fraunces',serif;
+    font-size:19px;
+  }
+  .hero-banner-caption span{
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#CFEFD6;
+    margin-top:4px;
+  }
 
-/* SERVICES */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
+  /* ---------- STATS STRIP (overlap) ---------- */
+  .stats-strip-wrap{
+    margin-top:-56px;
+    position:relative;
+    z-index:5;
+  }
+  .stats-strip{
+    background:var(--white);
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    padding:34px 20px;
+  }
+  .stats-strip .stat{
+    text-align:center;
+    padding:0 10px;
+    border-right:1px solid var(--line);
+  }
+  .stats-strip .stat:last-child{border-right:none;}
+  .stats-strip .stat b{
+    display:block;
+    font-family:'Fraunces',serif;
+    font-size:clamp(24px,3.4vw,34px);
+    color:var(--green-900);
+    font-weight:500;
+  }
+  .stats-strip .stat span{
+    font-size:13px;
+    color:var(--ink-soft);
+  }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
+  /* ---------- SECTION HEADERS ---------- */
+  .section-head{
+    max-width:600px;
+    margin:0 auto 44px auto;
+    text-align:center;
+  }
+  .section-head h2{
+    font-size:clamp(26px,3.4vw,36px);
+    margin-top:10px;
+  }
+  .section-head p{
+    margin-top:14px;
+    color:var(--ink-soft);
+    font-size:15.5px;
+    line-height:1.6;
+  }
+  .center{text-align:center;}
 
-.card:hover {
-    transform: translateY(-5px);
-}
+  /* ---------- HOW IT WORKS ---------- */
+  .how-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+    counter-reset:step;
+  }
+  .how-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px 24px;
+    position:relative;
+  }
+  .how-num{
+    width:38px;height:38px;
+    border-radius:10px;
+    background:var(--green-900);
+    color:var(--white);
+    font-family:'Fraunces',serif;
+    font-size:17px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:16px;
+  }
+  .how-card b{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    color:var(--green-900);
+    margin-bottom:6px;
+  }
+  .how-card p{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.5;
+    color:var(--ink-soft);
+  }
+  .how-connector{
+    display:none;
+  }
 
-/* DOCTOR */
-.doctor {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
+  /* ---------- WHO IS THIS FOR ---------- */
+  .who-section{background:var(--mint-100);}
+  .who-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+  }
+  .who-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:22px 18px;
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .who-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(27,77,46,0.08);}
+  .who-card .tick{
+    flex-shrink:0;
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:var(--mint-100);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .who-card .tick svg{width:13px;height:13px;color:var(--green-900);}
+  .who-card b{
+    font-size:15px;
+    font-weight:600;
+    display:block;
+    color:var(--green-900);
+  }
+  .who-card p{
+    margin:3px 0 0 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.4;
+  }
 
-.doctor img {
-    width: 280px;
-    border-radius: 12px;
-}
+  /* ---------- STORIES ---------- */
+  .stories-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+  .story-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:26px 24px;
+    box-shadow:0 10px 30px rgba(27,77,46,0.05);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .story-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(27,77,46,0.1);}
+  .story-tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--green-700);
+    background:var(--mint-100);
+    padding:5px 10px;
+    border-radius:100px;
+    margin-bottom:16px;
+  }
+  .story-line{
+    font-family:'Fraunces',serif;
+    font-size:18px;
+    line-height:1.45;
+    margin:0 0 8px 0;
+  }
+  .story-before{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:#B9C6BA;}
+  .story-after{color:var(--green-900);}
+  .story-arrow{color:var(--gold-500);margin:0 8px;}
+  .story-meta{
+    margin-top:16px;
+    padding-top:14px;
+    border-top:1px solid var(--line);
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
+  .stories-note{
+    max-width:640px;
+    margin:36px auto 0 auto;
+    text-align:center;
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
 
-/* CERTIFICATES */
-.certificates img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 10px;
-}
+  /* ---------- DOCTOR ---------- */
+  .doctor-grid{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:52px;
+    align-items:center;
+  }
+  .doctor-photo{
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .doctor-name{font-size:clamp(24px,3vw,30px);}
+  .doctor-role{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    color:var(--green-700);
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-top:6px;
+    display:block;
+  }
+  .doctor-facts{
+    display:flex;
+    gap:28px;
+    margin:24px 0 22px 0;
+    flex-wrap:wrap;
+  }
+  .doctor-facts div b{
+    display:block;
+    font-family:'Fraunces',serif;
+    font-size:26px;
+    color:var(--green-900);
+  }
+  .doctor-facts div span{font-size:12.5px;color:var(--ink-soft);}
+  .doctor-desc{
+    font-size:15.5px;
+    line-height:1.7;
+    color:var(--ink-soft);
+    max-width:520px;
+  }
+  .verify-badges{
+    margin-top:26px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .verify-badge{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px;
+    background:var(--mint-100);
+    border-radius:100px;
+    font-size:12.5px;
+    font-weight:500;
+    color:var(--green-900);
+  }
+  .verify-badge svg{width:14px;height:14px;color:var(--gold-500);}
 
-/* CTA STRIP */
-.cta-strip {
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
-    color: white;
-    padding: 50px;
-    text-align: center;
-}
+  /* ---------- CERTIFICATES ---------- */
+  .cert-section{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .cert-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    max-width:760px;
+    margin:0 auto;
+  }
+  .cert-card{
+    background:var(--mint-50);
+    border-radius:12px;
+    padding:14px;
+    border:1px solid var(--line);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cert-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(27,77,46,0.08);}
+  .cert-card img{border-radius:6px;}
+  .cert-caption{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    text-align:center;
+    margin-top:10px;
+  }
 
-/* FOOTER */
-.footer {
-    background: #0d3b1e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:720px;margin:0 auto;}
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding:22px 4px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:'Fraunces',serif;
+    font-size:17px;
+    color:var(--green-900);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .plus{
+    font-family:'Inter',sans-serif;
+    font-size:20px;
+    color:var(--gold-500);
+    flex-shrink:0;
+    margin-left:16px;
+    transition:transform .2s ease;
+  }
+  .faq-item[open] summary .plus{transform:rotate(45deg);}
+  .faq-item p{
+    margin:0 0 22px 0;
+    padding:0 4px;
+    font-size:15px;
+    line-height:1.65;
+    color:var(--ink-soft);
+    max-width:600px;
+  }
 
-/* FLOAT */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 16px;
-    border-radius: 50%;
-    font-size: 22px;
-}
+  /* ---------- FINAL CTA ---------- */
+  .final-cta{
+    background:linear-gradient(135deg,var(--green-900),var(--green-700));
+    color:var(--white);
+    text-align:center;
+  }
+  .final-cta .eyebrow{color:#BFE3C6;}
+  .final-cta h2{color:var(--white);font-size:clamp(26px,3.6vw,38px);}
+  .final-cta p{
+    color:rgba(255,255,255,0.82);
+    margin:14px 0 30px 0;
+    font-size:15.5px;
+  }
+  .final-cta .cta-row{justify-content:center;}
+  .final-cta .btn-primary{background:var(--white);color:var(--green-900);box-shadow:none;}
+  .final-cta .btn-primary:hover{background:var(--mint-100);}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--green-900);
+    color:rgba(255,255,255,0.75);
+    padding:28px 0 96px 0;
+  }
+  .footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+    font-size:13px;
+  }
+  .footer-inner b{color:var(--white);font-weight:500;}
+
+  /* ---------- WHATSAPP FLOAT (desktop/tablet) ---------- */
+  .whatsapp-float-wrap{
+    position:fixed;
+    bottom:26px;
+    right:26px;
+    z-index:70;
+    display:flex;
+    align-items:center;
+  }
+  .wa-tooltip{
+    background:var(--white);
+    color:var(--green-900);
+    font-size:13.5px;
+    font-weight:600;
+    padding:9px 15px;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+    margin-right:12px;
+    white-space:nowrap;
+    opacity:0;
+    transform:translateX(6px);
+    transition:opacity .2s ease, transform .2s ease;
+    pointer-events:none;
+  }
+  .whatsapp-float-wrap:hover .wa-tooltip{opacity:1;transform:translateX(0);}
+  .whatsapp-float{
+    position:relative;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--wa);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 26px rgba(27,77,46,0.3);
+    animation:wa-pulse 2.4s ease-in-out infinite;
+  }
+  .whatsapp-float svg{width:30px;height:30px;color:white;}
+
+  @keyframes wa-pulse{
+    0%   { box-shadow:0 10px 26px rgba(27,77,46,0.3), 0 0 0 0 rgba(37,211,102,0.55); }
+    70%  { box-shadow:0 10px 26px rgba(27,77,46,0.3), 0 0 0 16px rgba(37,211,102,0); }
+    100% { box-shadow:0 10px 26px rgba(27,77,46,0.3), 0 0 0 0 rgba(37,211,102,0); }
+  }
+  @keyframes dot-pulse{
+    0%,100%{opacity:1;transform:scale(1);}
+    50%{opacity:0.4;transform:scale(0.7);}
+  }
+
+  /* ---------- MOBILE STICKY CTA BAR ---------- */
+  .mobile-cta-bar{
+    display:none;
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:900px){
+    .nav-links{
+      position:absolute;
+      top:100%; left:0; right:0;
+      background:var(--white);
+      flex-direction:column;
+      align-items:flex-start;
+      gap:0;
+      border-bottom:1px solid var(--line);
+      box-shadow:0 14px 30px rgba(27,77,46,0.08);
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .25s ease;
+    }
+    .nav-links li{width:100%;}
+    .nav-links a{
+      display:block;
+      width:100%;
+      padding:14px 24px;
+      border-bottom:1px solid var(--line);
+      border-left:2px solid transparent;
+    }
+    .nav-links a:hover, .nav-links a.active{border-left-color:var(--gold-500);border-bottom-color:var(--line);}
+    .nav-toggle-checkbox:checked ~ .nav-links{max-height:400px;}
+    .nav-toggle-btn{display:flex;}
+    .nav-cta .btn span.full{display:none;}
+  }
+  @media (max-width:860px){
+    section{padding:64px 0;}
+    .how-grid{grid-template-columns:1fr;}
+    .who-grid{grid-template-columns:repeat(2,1fr);}
+    .stories-grid{grid-template-columns:1fr;}
+    .doctor-grid{grid-template-columns:1fr;}
+    .doctor-photo{max-width:260px;}
+    .cert-grid{grid-template-columns:1fr;}
+    .stats-strip{grid-template-columns:1fr;gap:18px;}
+    .stats-strip .stat{border-right:none;border-bottom:1px solid var(--line);padding-bottom:16px;}
+    .stats-strip .stat:last-child{border-bottom:none;padding-bottom:0;}
+    .nav-brand span{font-size:15px;}
+  }
+  @media (max-width:560px){
+    .who-grid{grid-template-columns:1fr;}
+    .hero{padding-top:14px;}
+    .nav-inner{padding:10px 18px;}
+    .nav-cta{display:none;}
+    .whatsapp-float-wrap{display:none;}
+    .mobile-cta-bar{
+      display:flex;
+      position:fixed;
+      left:0; right:0; bottom:0;
+      z-index:70;
+      background:var(--white);
+      border-top:1px solid var(--line);
+      padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+      gap:10px;
+      box-shadow:0 -8px 24px rgba(27,77,46,0.1);
+    }
+    .mobile-cta-bar .btn{flex:1;padding:14px 10px;font-size:14.5px;}
+    footer{padding-bottom:96px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .whatsapp-float{animation:none;}
+    .badge-live .dot{animation:none;}
+  }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-<div class="hero-content">
-    <h1>Heal Naturally. Live Pain-Free.</h1>
-    <p>Acupuncturist & Neurotherapist | Since 1997</p>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img src="images/logo.png" alt="Sandeep Tawade logo">
+      <div>
+        <span>Sandeep Tawade</span>
+        <small>Acupressure &amp; Neurotherapy</small>
+      </div>
+    </div>
 
-    <a href="https://wa.me/919322279092?text=Hello%20Doctor,%20I%20want%20to%20book%20an%20appointment" class="cta-btn">Book on WhatsApp</a>
-    <a href="tel:+919322279092" class="cta-btn">Call Now</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </label>
+
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#who">Conditions</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#stories">Stories</a></li>
+      <li><a href="#doctor">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="tel:+919322279092" class="btn btn-outline-dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="full">Call</span>
+      </a>
+      <a href="https://wa.me/919322279092?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" class="btn btn-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.482L4 29l7.71-1.867A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.36l-.357-.213-4.575 1.108 1.128-4.459-.234-.366A9.77 9.77 0 0 1 6.182 15c0-5.415 4.404-9.818 9.819-9.818S25.818 9.585 25.818 15 21.415 24.818 16.001 24.818zm5.386-7.34c-.295-.148-1.746-.862-2.016-.96-.27-.099-.467-.148-.664.148-.197.295-.762.96-.934 1.157-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.372-1.464-.877-.782-1.469-1.748-1.641-2.043-.172-.295-.018-.454.13-.601.134-.133.295-.345.443-.517.148-.172.197-.295.295-.492.099-.197.05-.37-.025-.517-.074-.148-.664-1.6-.91-2.192-.24-.575-.484-.497-.664-.506l-.566-.01c-.197 0-.517.074-.788.37-.27.295-1.033 1.01-1.033 2.463s1.058 2.856 1.205 3.053c.148.197 2.083 3.181 5.048 4.462.705.304 1.255.486 1.684.622.708.225 1.352.193 1.862.117.568-.085 1.746-.714 1.992-1.403.246-.69.246-1.28.172-1.403-.074-.123-.27-.197-.566-.345z"/></svg>
+        <span class="full">Book</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="hero-mark" src="images/logo.png" alt="" aria-hidden="true">
+
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="badge-live"><span class="dot"></span> Same-week appointments available</div>
+      <p class="eyebrow">Home‑Visit Acupressure &amp; Neurotherapy · Mumbai</p>
+      <h1 style="margin-top:14px;">Natural Relief for Neck, Shoulder &amp; Lower Back Pain — <em>At Your Home</em></h1>
+      <p class="hero-sub">Corporate-hours friendly. No clinic visits, no waiting rooms — Sandeep Tawade brings 30 years of practice to your home, anywhere in Mumbai.</p>
+
+      <div class="stat-chips">
+        <div class="stat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>30+ Years Experience</div>
+        <div class="stat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>10,000+ Patients Treated</div>
+        <div class="stat-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9"/><path d="M9 21V12h6v9"/></svg>Home Visits Across Mumbai</div>
+      </div>
+
+      <div class="cta-row">
+        <a href="https://wa.me/919322279092?text=Hi%2C%20I%20want%20to%20book%20an%20assessment" class="btn btn-wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.482L4 29l7.71-1.867A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.36l-.357-.213-4.575 1.108 1.128-4.459-.234-.366A9.77 9.77 0 0 1 6.182 15c0-5.415 4.404-9.818 9.819-9.818S25.818 9.585 25.818 15 21.415 24.818 16.001 24.818zm5.386-7.34c-.295-.148-1.746-.862-2.016-.96-.27-.099-.467-.148-.664.148-.197.295-.762.96-.934 1.157-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.372-1.464-.877-.782-1.469-1.748-1.641-2.043-.172-.295-.018-.454.13-.601.134-.133.295-.345.443-.517.148-.172.197-.295.295-.492.099-.197.05-.37-.025-.517-.074-.148-.664-1.6-.91-2.192-.24-.575-.484-.497-.664-.506l-.566-.01c-.197 0-.517.074-.788.37-.27.295-1.033 1.01-1.033 2.463s1.058 2.856 1.205 3.053c.148.197 2.083 3.181 5.048 4.462.705.304 1.255.486 1.684.622.708.225 1.352.193 1.862.117.568-.085 1.746-.714 1.992-1.403.246-.69.246-1.28.172-1.403-.074-.123-.27-.197-.566-.345z"/></svg>
+          Book Assessment on WhatsApp
+        </a>
+        <a href="tel:+919322279092" class="btn btn-outline-dark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+
+    <!-- BANNER — currently showing the therapist portrait as a placeholder.
+         Swap for a real treatment/banner photo any time: replace the src
+         below with images/banner.jpg (recommended 1600×700px). -->
+    <div class="hero-banner">
+      <img src="images/sandeep-tawade-portrait.png" alt="Sandeep Tawade, Acupressure Practitioner">
+      <p class="hero-banner-caption">30 Years of Healing Hands<span>Home visits across Mumbai</span></p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap stats-strip-wrap">
+  <div class="stats-strip">
+    <div class="stat"><b>30+</b><span>Years Experience</span></div>
+    <div class="stat"><b>10,000+</b><span>Patients Treated</span></div>
+    <div class="stat"><b>100%</b><span>Home Visits, Mumbai</span></div>
+  </div>
 </div>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center">Simple, Start To Finish</p>
+      <h2>Three steps to your first session</h2>
+      <p>No forms, no clinic visits — just a message and a scheduled time.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-num">1</div>
+        <b>Message on WhatsApp</b>
+        <p>Tell us what's hurting and when you're free — takes under a minute.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">2</div>
+        <b>We confirm your visit</b>
+        <p>Get a confirmed appointment slot, usually within a few hours.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">3</div>
+        <b>Sandeep arrives at your home</b>
+        <p>A full session at your convenience — no travel, no waiting room.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- STATS -->
-<div class="stats">
-    <div class="stat">
-        <h2>28+</h2>
-        <p>Years Experience</p>
+<!-- WHO IS THIS FOR -->
+<section id="who" class="who-section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center">Is This For You?</p>
+      <h2>Built for people who can't afford to sit still</h2>
+      <p>If you spend your day at a desk, in traffic, or on your feet — and pain has started dictating your schedule — this is for you.</p>
     </div>
-    <div class="stat">
-        <h2>10,000+</h2>
-        <p>Patients Treated</p>
+    <div class="who-grid">
+      <div class="who-card"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div><b>Corporate Professionals</b><p>Long hours, long commutes, no time for repeat clinic visits</p></div></div>
+      <div class="who-card"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div><b>Frozen Shoulder</b><p>Restricted movement that's stopped you mid-motion</p></div></div>
+      <div class="who-card"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div><b>Neck Pain</b><p>Screen-and-posture pain that flares by evening</p></div></div>
+      <div class="who-card"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div><b>Sciatica</b><p>Sharp, shooting pain down the leg</p></div></div>
+      <div class="who-card"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div><b>Lower Back Pain</b><p>The kind that makes sitting through meetings hard</p></div></div>
+      <div class="who-card"><div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div><div><b>Slip Disc</b><p>Assessed case-by-case, within safe scope of practice</p></div></div>
     </div>
-    <div class="stat">
-        <h2>100%</h2>
-        <p>Natural Treatment</p>
-    </div>
-</div>
+  </div>
+</section>
 
-<!-- SERVICES -->
-<section class="section">
-    <h2>Conditions We Treat</h2>
-    <div class="services">
-        <div class="card">Back Pain</div>
-        <div class="card">Slip Disc</div>
-        <div class="card">Sciatica</div>
-        <div class="card">Knee Pain</div>
-        <div class="card">Arthritis</div>
-        <div class="card">Migraine</div>
-        <div class="card">Cervical Spondylitis</div>
-        <div class="card">Paralysis</div>
+<!-- STORIES -->
+<section id="stories">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center">Recovery, Not Reviews</p>
+      <h2>Real patients. Real timelines.</h2>
+      <p>No star ratings, no filler quotes — just what changed and how long it took.</p>
     </div>
+    <div class="stories-grid">
+      <div class="story-card">
+        <span class="story-tag">Frozen Shoulder</span>
+        <p class="story-line"><span class="story-before">Couldn't lift her arm above shoulder height.</span></p>
+        <p class="story-line"><span class="story-arrow">→</span><span class="story-after">Full overhead reach after 4 sessions, resumed work.</span></p>
+        <div class="story-meta">Marketing professional, Andheri · 4 sessions</div>
+      </div>
+      <div class="story-card">
+        <span class="story-tag">Lower Back Pain</span>
+        <p class="story-line"><span class="story-before">Couldn't sit through a 1-hour meeting.</span></p>
+        <p class="story-line"><span class="story-arrow">→</span><span class="story-after">Back to full workdays within 3 weeks.</span></p>
+        <div class="story-meta">IT professional, Powai · 6 sessions</div>
+      </div>
+      <div class="story-card">
+        <span class="story-tag">Sciatica</span>
+        <p class="story-line"><span class="story-before">Sharp pain down the leg, disturbed sleep nightly.</span></p>
+        <p class="story-line"><span class="story-arrow">→</span><span class="story-after">Pain-free nights within 2 weeks.</span></p>
+        <div class="story-meta">Homemaker, Malad · 5 sessions</div>
+      </div>
+    </div>
+    <p class="stories-note">Sample case format shown above — swap in your own patients' real stories (with permission) before publishing.</p>
+  </div>
 </section>
 
 <!-- DOCTOR -->
-<section class="section">
-    <h2>Meet Your Therapist</h2>
-
-    <div class="doctor">
-        <img src="Gemini_Generated_Image_2k05wo2k05wo2k05 (2).png">
-        <div>
-            <p><strong>Sandeep Tawade</strong></p>
-            <p>Practicing acupuncture for over 2 decades with proven results.</p>
-            <p>Specialized in advanced pain relief and holistic healing.</p>
+<section id="doctor">
+  <div class="wrap">
+    <div class="doctor-grid">
+      <div class="doctor-photo">
+        <img src="images/sandeep-tawade-portrait.png" alt="Sandeep Tawade, Acupressure Practitioner">
+      </div>
+      <div>
+        <p class="doctor-role">Meet Your Therapist</p>
+        <h2 class="doctor-name">Sandeep Tawade</h2>
+        <div class="doctor-facts">
+          <div><b>30+</b><span>Years in practice</span></div>
+          <div><b>10,000+</b><span>Patients treated</span></div>
+          <div><b>1997</b><span>Practicing since</span></div>
         </div>
+        <p class="doctor-desc">Registered Acupuncture Practitioner with the Maharashtra Council of Acupuncture, specialising in pain relief for the neck, shoulder, and lower back — delivered at your home, on your schedule.</p>
+        <div class="verify-badges">
+          <div class="verify-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 4.86 5.36.78-3.88 3.78.92 5.34L12 14.27l-4.8 2.49.92-5.34-3.88-3.78 5.36-.78z"/></svg>MCA Registered · MCA/2023/10/B/004174</div>
+          <div class="verify-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9"/><path d="M9 21V12h6v9"/></svg>Serving all of Mumbai</div>
+        </div>
+      </div>
     </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-strip">
-    <h2>Start Your Healing Journey Today</h2>
-    <a href="https://wa.me/919322279092" class="cta-btn">WhatsApp Now</a>
+  </div>
 </section>
 
 <!-- CERTIFICATES -->
-<section class="section certificates">
-    <h2>Certifications</h2>
-    <img src="WhatsApp Image 2026-04-13 at 8.36.09 PM (1).jpeg">
-    <img src="WhatsApp Image 2026-04-13 at 8.36.09 PM.jpeg">
+<section class="cert-section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center">Verified &amp; Registered</p>
+      <h2>Government-recognised, on record</h2>
+      <p>Registered under the Maharashtra Acupuncture System of Therapy Act, 2015 — valid through 24/10/2028.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="images/mca-certificate.jpeg" alt="Certificate of Registration, Maharashtra Council of Acupuncture">
+        <p class="cert-caption">Certificate of Registration</p>
+      </div>
+      <div class="cert-card">
+        <img src="images/mca-registration-card.jpeg" alt="Maharashtra Council of Acupuncture Registration ID card">
+        <p class="cert-caption">Registration ID Card</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>Serving Mumbai | Appointment-Based Home Visits</p>
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center">Questions</p>
+      <h2>Before you book</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Does acupressure hurt? <span class="plus">+</span></summary>
+        <p>No. Gentle pressure is applied at specific points, and most patients feel only mild pressure — not pain. Most people relax or even doze off during a session.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many sessions will I need? <span class="plus">+</span></summary>
+        <p>It depends on the condition and how long you've had it. Many patients notice a difference within 3–4 sessions; a full course is usually assessed after your first visit.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How soon can I get an appointment? <span class="plus">+</span></summary>
+        <p>Most home visits can be scheduled within 24–48 hours of your WhatsApp message, subject to availability in your area.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you visit at home? <span class="plus">+</span></summary>
+        <p>Yes — every session is a home visit. There's no clinic to travel to; treatment happens in your own space, at a time that works for you.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What areas of Mumbai do you cover? <span class="plus">+</span></summary>
+        <p>All of Mumbai, appointment-based. Message on WhatsApp with your area and we'll confirm availability and timing.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="wrap">
+    <p class="eyebrow center">Start Today</p>
+    <h2>Book your assessment — we'll come to you</h2>
+    <p>One WhatsApp message is all it takes to get a visit scheduled.</p>
+    <div class="cta-row">
+      <a href="https://wa.me/919322279092?text=Hi%2C%20I%20want%20to%20book%20an%20assessment" class="btn btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.482L4 29l7.71-1.867A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.36l-.357-.213-4.575 1.108 1.128-4.459-.234-.366A9.77 9.77 0 0 1 6.182 15c0-5.415 4.404-9.818 9.819-9.818S25.818 9.585 25.818 15 21.415 24.818 16.001 24.818zm5.386-7.34c-.295-.148-1.746-.862-2.016-.96-.27-.099-.467-.148-.664.148-.197.295-.762.96-.934 1.157-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.372-1.464-.877-.782-1.469-1.748-1.641-2.043-.172-.295-.018-.454.13-.601.134-.133.295-.345.443-.517.148-.172.197-.295.295-.492.099-.197.05-.37-.025-.517-.074-.148-.664-1.6-.91-2.192-.24-.575-.484-.497-.664-.506l-.566-.01c-.197 0-.517.074-.788.37-.27.295-1.033 1.01-1.033 2.463s1.058 2.856 1.205 3.053c.148.197 2.083 3.181 5.048 4.462.705.304 1.255.486 1.684.622.708.225 1.352.193 1.862.117.568-.085 1.746-.714 1.992-1.403.246-.69.246-1.28.172-1.403-.074-.123-.27-.197-.566-.345z"/></svg>
+        Book Assessment on WhatsApp
+      </a>
+      <a href="tel:+919322279092" class="btn btn-outline-light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call +91 93222 79092
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div><b>Sandeep Tawade</b> — Acupressure &amp; Neurotherapy</div>
+    <div>Serving Mumbai · Appointment-based home visits</div>
+    <div>MCA Reg. No. MCA/2023/10/B/004174</div>
+  </div>
 </footer>
 
-<a href="https://wa.me/919322279092" class="whatsapp">💬</a>
+<!-- FLOATING WHATSAPP (desktop / tablet) -->
+<div class="whatsapp-float-wrap">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+  <a href="https://wa.me/919322279092?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.482L4 29l7.71-1.867A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.36l-.357-.213-4.575 1.108 1.128-4.459-.234-.366A9.77 9.77 0 0 1 6.182 15c0-5.415 4.404-9.818 9.819-9.818S25.818 9.585 25.818 15 21.415 24.818 16.001 24.818zm5.386-7.34c-.295-.148-1.746-.862-2.016-.96-.27-.099-.467-.148-.664.148-.197.295-.762.96-.934 1.157-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.372-1.464-.877-.782-1.469-1.748-1.641-2.043-.172-.295-.018-.454.13-.601.134-.133.295-.345.443-.517.148-.172.197-.295.295-.492.099-.197.05-.37-.025-.517-.074-.148-.664-1.6-.91-2.192-.24-.575-.484-.497-.664-.506l-.566-.01c-.197 0-.517.074-.788.37-.27.295-1.033 1.01-1.033 2.463s1.058 2.856 1.205 3.053c.148.197 2.083 3.181 5.048 4.462.705.304 1.255.486 1.684.622.708.225 1.352.193 1.862.117.568-.085 1.746-.714 1.992-1.403.246-.69.246-1.28.172-1.403-.074-.123-.27-.197-.566-.345z"/></svg>
+  </a>
+</div>
+
+<!-- MOBILE STICKY CTA BAR -->
+<div class="mobile-cta-bar">
+  <a href="tel:+919322279092" class="btn btn-outline-dark">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/919322279092?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" class="btn btn-wa" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.902 6.482L4 29l7.71-1.867A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.36l-.357-.213-4.575 1.108 1.128-4.459-.234-.366A9.77 9.77 0 0 1 6.182 15c0-5.415 4.404-9.818 9.819-9.818S25.818 9.585 25.818 15 21.415 24.818 16.001 24.818zm5.386-7.34c-.295-.148-1.746-.862-2.016-.96-.27-.099-.467-.148-.664.148-.197.295-.762.96-.934 1.157-.172.197-.344.222-.639.074-.295-.148-1.245-.459-2.372-1.464-.877-.782-1.469-1.748-1.641-2.043-.172-.295-.018-.454.13-.601.134-.133.295-.345.443-.517.148-.172.197-.295.295-.492.099-.197.05-.37-.025-.517-.074-.148-.664-1.6-.91-2.192-.24-.575-.484-.497-.664-.506l-.566-.01c-.197 0-.517.074-.788.37-.27.295-1.033 1.01-1.033 2.463s1.058 2.856 1.205 3.053c.148.197 2.083 3.181 5.048 4.462.705.304 1.255.486 1.684.622.708.225 1.352.193 1.862.117.568-.085 1.746-.714 1.992-1.403.246-.69.246-1.28.172-1.403-.074-.123-.27-.197-.566-.345z"/></svg>
+    Book on WhatsApp
+  </a>
+</div>
+
+<script>
+  // Close mobile menu when a link is tapped
+  document.querySelectorAll('.nav-links a').forEach(function(link){
+    link.addEventListener('click', function(){
+      var toggle = document.getElementById('nav-toggle');
+      if(toggle) toggle.checked = false;
+    });
+  });
+
+  // Highlight the current section in the nav while scrolling
+  var sections = document.querySelectorAll('section[id], header[id]');
+  var navLinks = document.querySelectorAll('.nav-links a');
+  if('IntersectionObserver' in window && sections.length){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          navLinks.forEach(function(l){ l.classList.remove('active'); });
+          var match = document.querySelector('.nav-links a[href="#' + entry.target.id + '"]');
+          if(match) match.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function(s){ observer.observe(s); });
+  }
+</script>
 
 </body>
 </html>
